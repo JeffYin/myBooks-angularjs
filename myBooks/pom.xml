@@ -175,8 +175,27 @@
                     </dependency>
                 </dependencies>
             </plugin>
-           
 		</plugins>
+		
+		<!-- 
+		<resources>
+		    <resource>
+				<directory>src/main/resources</directory>
+		    </resource>
+		   
+		    <resource>
+				<directory>src/main/webapp</directory>
+		    </resource>
+		   
+		    <resource>
+				<directory>src/main/webapp</directory>
+				<filtering>true</filtering>
+				<includes>
+				    <include>**/*.html</include>
+				</includes>
+		    </resource>
+		</resources>
+		 -->
 	</build>
 	
 </project>
