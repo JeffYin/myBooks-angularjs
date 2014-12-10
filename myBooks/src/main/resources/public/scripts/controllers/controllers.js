@@ -1,19 +1,28 @@
+'use strict';
 
-#TODO
- *Book Detail Form
- *Login 
+/*
+angular.module('mytodoApp')
+.controller('MainCtrl', ['$scope', 'BookService',
+  function ($scope, BookService) {
+    $scope.books = BookService.query();
 
-#Resources
-## Picture upload
-    http://flowjs.github.io/ng-flow/
-    
-## bower integration 
-    
+     $scope.addTodo=function () {
+    $scope.books.push($scope.todo);
+    $scope.todo=''; 
+  };
 
-var appControllers = angular.module('mytodoApp', []);
+  $scope.removeTodo = function (index) {
+    $scope.books.splice(index, 1);
+  };
 
-<!-- Books Controllder --> 
-appControllers.controller('MainCtrl', ['$scope', 'BookService',
+
+  }
+]);
+*/
+
+
+angular.module('mytodoApp')
+.controller('MainCtrl', ['$scope', 'BookService',
     function ($scope, BookService) {
       $scope.books = BookService.query();
 
@@ -27,11 +36,8 @@ appControllers.controller('MainCtrl', ['$scope', 'BookService',
     };
 
     }
-]);
-
-
-<!-- Book Detail Controller -->
-appControllers.controller('BookDetailCtrl', ['$scope', '$routeParams', 'BookService',
+])
+.controller('BookDetailCtrl', ['$scope', '$routeParams', 'BookService',
    function($scope, $routeParams, BookService) {
      $scope.book = BookService.get({bookId: $routeParams.bookId}, function(book) {
 //       $scope.mainImageUrl = phone.images[0];
@@ -42,4 +48,5 @@ appControllers.controller('BookDetailCtrl', ['$scope', '$routeParams', 'BookServ
        $scope.mainImageUrl = imageUrl;
      }
      */
-   }]);    
+   }]);
+

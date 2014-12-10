@@ -1,7 +1,8 @@
   
   <!-- books Lists -->
+  This is book detail
   <div class="row" style="border:0"> 
-     <div class="col-md-4 thumbnail" ng-repeat="book in books" style="border:0">
+     <div class="col-md-4 thumbnail" ng-model="book" style="border:0">
 			    <a ng-href="#/book/{{book.id}}" class="thumbnail" style="border:0">
 				      <img ng-src="images/{{book.id}}.jpg" style="width:260px;height:327px" alt="">
 				 

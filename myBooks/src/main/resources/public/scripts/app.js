@@ -29,6 +29,11 @@ angular
     	  templateUrl: 'views/books.html',
     	  controller: 'MainCtrl'
       })
+      .when('/book/:bookId', {
+    	  templateUrl: 'views/book.html',
+    	  controller: 'BookDetailCtrl'
+      })
+     
       .when('/about', {
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'

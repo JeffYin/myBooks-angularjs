@@ -2,3 +2,8 @@ myBooks/.classpath
 myBooks/.project
 myBooks/.project
 myBooks/.settings/org.eclipse.core.resources.prefs
+myBooks/.settings/org.eclipse.core.resources.prefs
+myBooks/.settings/org.eclipse.core.resources.prefs
+*.prefs
+myBooks/.settings/org.eclipse.m2e.core.prefs
+*.prefs
