@@ -1,14 +1,18 @@
-  
-  <!-- books Lists -->
-  This is book detail
-  <div class="row" style="border:0"> 
-     <div class="col-md-4 thumbnail" ng-model="book" style="border:0">
-			    <a ng-href="#/book/{{book.id}}" class="thumbnail" style="border:0">
-				      <img ng-src="images/{{book.id}}.jpg" style="width:260px;height:327px" alt=""/>
-				 
-					 <h4 align="center">{{book.title}}</h4>
-					 <h4 align="center">{{book.author}} - {{book.publisher}}</h4>
-				 </a>
-                 
-	       </div>
-   </div>
+<div class="row" style="border:0"> 
+   
+
+<form class="form-horizontal" role="form">
+  <div class="form-group">
+        <label for="title" class="col-sm-2 control-label" th:text="#{book.title}">Title</label>
+        <div class="col-sm-10">
+            <input id="title" class="form-control" maxlength="50" placeholder="#{book.title}" value="{{book.title}}"/>
+        </div>
+    </div>
+    
+   <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">Sign in</button>
+    </div>
+  </div>
+</form>
+</div>
