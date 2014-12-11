@@ -22,15 +22,15 @@ angular
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/books.html',
+        templateUrl: 'views/books',
         controller: 'MainCtrl'
       })
       .when('/books', {
-    	  templateUrl: 'views/books.html',
+    	  templateUrl: 'views/books',
     	  controller: 'MainCtrl'
       })
       .when('/book/:bookId', {
-    	  templateUrl: 'views/book.html',
+    	  templateUrl: 'views/book',
     	  controller: 'BookDetailCtrl'
       })
      

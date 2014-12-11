@@ -1,0 +1,20 @@
+package com.dream.book;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+ 
+@Controller
+@RequestMapping("/")
+public class HomeController {
+ 
+	@RequestMapping
+    public String index() {
+        return "index";
+    }
+    
+    @RequestMapping("/views/{temlateName}")
+	public String view(@PathVariable("temlateName") String templateName) {
+		return "/views/" + templateName;
+	}
+}

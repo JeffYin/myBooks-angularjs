@@ -24,7 +24,7 @@ public class BookController {
 	   this.bookRepository = bookRepository;
     }
     
-    @RequestMapping(value = "/books", method = GET)
+    @RequestMapping(value = "", method = GET)
     public List<Book> getBooks() throws JsonProcessingException {
 		List<Book> bookList = bookRepository.findAll(new Sort(Sort.Direction.ASC, "title"));
 
